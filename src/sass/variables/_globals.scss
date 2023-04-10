@@ -1,6 +1,7 @@
 @use "typography";
 @use "colors";
 @use "functions";
+@use "breakpoints";
 
 html {
   font-family: typography.$main-typography;
@@ -38,4 +39,10 @@ section {
   align-items: center;
   padding: 80px 0;
   justify-content: center;
+}
+
+@media (min-width: breakpoints.$breakpoint-desktop) {
+  section {
+    flex-direction: row;
+  }
 }
