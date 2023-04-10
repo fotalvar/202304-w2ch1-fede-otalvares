@@ -1,0 +1,30 @@
+@use "typography";
+@use "colors";
+@use "functions";
+
+html {
+  font-family: typography.$main-typography;
+}
+
+body {
+  background-color: colors.$main-light-color;
+}
+
+input {
+  font: inherit;
+  border: none;
+}
+
+button {
+  cursor: pointer;
+  font: inherit;
+}
+
+p {
+  color: colors.$paragraphs-color;
+  font-size: functions.pixelsToRem(15);
+}
+
+h2 {
+  color: colors.$main-light-color;
+}
