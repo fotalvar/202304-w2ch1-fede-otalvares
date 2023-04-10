@@ -1,6 +1,7 @@
 @use "../variables/typography";
 @use "../variables/colors";
 @use "../variables/functions";
+@use "../variables/breakpoints";
 
 .card-container {
   display: flex;
@@ -28,4 +29,17 @@
 h2 {
   text-transform: uppercase;
   font-size: functions.pixelsToRem(35);
+}
+
+@media (min-width: breakpoints.$breakpoint-desktop) {
+  .card-container {
+    &--first {
+      border-radius: functions.pixelsToRem(8) 0 0 functions.pixelsToRem(8);
+    }
+
+    &--third {
+      background-color: $third-color;
+      border-radius: 0 functions.pixelsToRem(8) functions.pixelsToRem(8) 0;
+    }
+  }
 }
