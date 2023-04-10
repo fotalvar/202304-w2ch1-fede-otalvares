@@ -8,8 +8,14 @@
   padding: 13px;
   border-radius: 30px;
   font-size: 15px;
+  border: 2px solid colors.$main-light-color;
 
   &--first {
     color: colors.$first-color;
   }
+}
+
+.button:hover {
+  background-color: transparent;
+  color: colors.$main-light-color;
 }
