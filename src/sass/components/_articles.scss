@@ -9,9 +9,19 @@
   padding: 45px;
   gap: 30px;
   height: 450px;
-  border-radius: functions.pixelsToRem(8) functions.pixelsToRem(8) 0 0;
+
   &--first {
     background-color: $first-color;
+    border-radius: functions.pixelsToRem(8) functions.pixelsToRem(8) 0 0;
+  }
+
+  &--second {
+    background-color: $second-color;
+  }
+
+  &--third {
+    background-color: $third-color;
+    border-radius: 0 0 functions.pixelsToRem(8) functions.pixelsToRem(8);
   }
 }
 
