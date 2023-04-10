@@ -1,0 +1,15 @@
+@use "../variables/typography";
+@use "../variables/colors";
+@use "../variables/functions";
+
+.button {
+  background-color: colors.$main-light-color;
+  width: 150px;
+  padding: 13px;
+  border-radius: 30px;
+  font-size: 15px;
+
+  &--first {
+    color: colors.$first-color;
+  }
+}

@@ -1,0 +1,42 @@
+@use "typography";
+@use "colors";
+@use "functions";
+
+html {
+  font-family: typography.$main-typography;
+}
+
+body {
+  background-color: colors.$main-light-color;
+  width: 100vw;
+}
+
+input {
+  font: inherit;
+  border: none;
+}
+
+button {
+  cursor: pointer;
+  font: inherit;
+}
+
+p {
+  color: colors.$paragraphs-color;
+  font-size: functions.pixelsToRem(15);
+  line-height: 26px;
+}
+
+h2 {
+  font-family: typography.$second-typography;
+  color: colors.$main-light-color;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+}

@@ -1,0 +1,21 @@
+@use "../variables/typography";
+@use "../variables/colors";
+@use "../variables/functions";
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  padding: 45px;
+  gap: 30px;
+  height: 450px;
+  border-radius: functions.pixelsToRem(8) functions.pixelsToRem(8) 0 0;
+  &--first {
+    background-color: $first-color;
+  }
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: functions.pixelsToRem(35);
+}

@@ -1,0 +1,17 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body,
+h2,
+p {
+  margin: 0;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  margin: 0;
+}
