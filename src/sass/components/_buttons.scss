@@ -13,6 +13,14 @@
   &--first {
     color: colors.$first-color;
   }
+
+  &--second {
+    color: colors.$second-color;
+  }
+
+  &--third {
+    color: colors.$third-color;
+  }
 }
 
 .button:hover {
